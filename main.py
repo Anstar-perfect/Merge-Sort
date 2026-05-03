@@ -18,6 +18,7 @@ def merge_sort(a):
             else:
                 a[k] = right[j]
                 j+=1
+            k+=1    
 
         while i<len(left):
             a[k] = left[i]
@@ -28,7 +29,7 @@ def merge_sort(a):
             j+=1
             k+=1
 
-a=[23,1,3,34,20,21]
+a=[23,1,3,34,20,21,32]
 print('Unsorted Array',a)
 merge_sort(a)
 print('Sorted Array {}'.format(a))                                
